@@ -10,6 +10,8 @@ const app = express()
 app.use(morgan('tiny'))
 app.use(cors())
 
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 app.get('/videos', (req, res) => {
   const url = 'https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PLDU0zxRNUv8lKih2evaNl9V5wDkP7N4Ul'
   fetch(`${url}&key=${process.env.GOOGLE_API_KEY}`)
@@ -19,21 +21,25 @@ app.get('/videos', (req, res) => {
     })
 })
 
-function notFound(res, req, next) {
-  res.status(404)
-  const error = new Error('Not Found')
-  next(error)
-}
+// function notFound(res, req, next) {
+//   res.status(404)
+//   const error = new Error('Not Found')
+//   next(error)
+// }
 
-function errorHandler(error, req, res, next) {
-  res.status(res.statusCode || 500)
-  res.json({
-    message: error.message
-  })
-}
+// function errorHandler(error, req, res, next) {
+//   res.status(res.statusCode || 500)
+//   res.json({
+//     message: error.message
+//   })
+// }
 
-app.use(notFound)
-app.use(errorHandler)
+// app.use(notFound)
+// app.use(errorHandler)
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname + '/client/build/index.html'));
+});
 
 const port = process.env.PORT || 3001
 app.listen(port, () => {

@@ -267,7 +267,7 @@
 
 @media (max-width: 400px) {
   .social-icons {
-    width: 50vw;
+    width: 55vw;
   }
 
   .title-container {
@@ -276,10 +276,23 @@
   }
 
   .dropdown-box {
-    width: 70vw;
+    width: 75vw;
   }
 
   .dropdown {
     font-size: 4.5vw;
+  }
+
+  .video img {
+    height: 30vh;
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 5.5vw;
+  }
+
+  p {
+    font-size: 5vw;
   }
 }

@@ -213,12 +213,25 @@
 .contact-container {
   height: auto;
   width: 100%;
-  border: solid black;
-  display: flex;
+  border: solid #AB3C3C;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   margin-top: 2%;
-  flex-direction: column;
+  text-align: left;
+  padding: 5%;
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2vw;
+}
+
+.contact-text {
+  height: auto;
+  width: 100%;
+}
+
+.contact-text p a {
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 @media (max-width: 800px) {

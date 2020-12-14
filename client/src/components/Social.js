@@ -11,10 +11,10 @@ function Social() {
   return (
     <div className='social-container'>
       <div className='social-icons'>
-        <div className='github-icon'>{github}</div>
-        <div className='youtube-icon'>{youtube}</div>
-        <div className='instagram-icon'>{instagram}</div>
-        <div className='twitter-icon'>{twitter}</div>
+        <a href="https://github.com/PFVNK"><div className='github-icon'>{github}</div></a>
+        <a href="https://www.youtube.com/channel/UCrkemqz8EI5wuaN5C4apjpA?view_as=subscriber"><div className='youtube-icon'>{youtube}</div></a>
+        <a href="https://www.instagram.com/pfvnk/"><div className='instagram-icon'>{instagram}</div></a>
+        <a href="https://twitter.com/PFVNK"><div className='twitter-icon'>{twitter}</div></a>
       </div>
     </div>
   )

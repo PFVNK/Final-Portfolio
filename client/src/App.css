@@ -50,6 +50,7 @@
 
 .dropdown-container {
   /* height: 50vh; */
+  /* border: solid blue; */
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -63,6 +64,7 @@
 
 .dropdown-box {
   width: 40vw;
+  /* border: solid yellow; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,7 +215,7 @@
 
 .contact-container {
   height: auto;
-  width: 100%;
+  width: 39.5vw;
   border: solid #AB3C3C;
   /* display: flex;
   justify-content: center;
@@ -229,10 +231,19 @@
 .contact-text {
   height: auto;
   width: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.contact-text p a {
+.contact-text p {
   font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2vw;
+}
+
+.contact-text a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Special Elite', cursive;
+  font-size: 2vw;
 }
 
 @media (max-width: 800px) {

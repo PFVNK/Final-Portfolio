@@ -7,7 +7,6 @@ function Contact() {
         <p>Feel free to contact me anytime!</p>
         <a href="mailto: patrickslx@yahoo.com">patrickslx@yahoo.com</a>
       </div>
-
     </div>
   )
 }

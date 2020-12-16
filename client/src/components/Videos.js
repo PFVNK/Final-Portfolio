@@ -22,9 +22,10 @@ function Videos() {
   // })
 
   if (videos) {
+    console.log(videos)
     return (
       <div className='videos-container'>
-        {videos.reverse().filter(video => video.snippet.thumbnails.high !== undefined).map((video, i) => {
+        {videos.filter(video => video.snippet.thumbnails.high !== undefined).map((video, i) => {
           return <div key={i} className='video'>
             <img className='gallery-img' src={video.snippet.thumbnails.high.url} alt={'test'} />
             <div className='video-text-container'>

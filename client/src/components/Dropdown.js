@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineDown } from "react-icons/ai";
 
-import About from './About'
-import Videos from './Videos'
-import Projects from './Projects'
-import Contact from './Contact'
+import loadable from '@loadable/component'
+
+const About = loadable(() => import('./About'))
+const Videos = loadable(() => import('./Videos'))
+const Projects = loadable(() => import('./Projects'))
+const Contact = loadable(() => import('./Contact'))
 
 let ex = <AiOutlineClose className='icon' />
 let arrow = <AiOutlineDown className='icon' />

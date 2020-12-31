@@ -130,7 +130,7 @@
 
 .videos-container {
   height: 50vh;
-  width: 100%;
+  width: 40vw;
   overflow: scroll;
   border: solid #AB3C3C;
   /* display: flex;
@@ -144,6 +144,11 @@
 .video img {
   height: 37vh;
   width: 30vw;
+}
+
+.video .video-iframe {
+  height: 30vh;
+  width: 35vw;
 }
 
 .video {

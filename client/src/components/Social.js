@@ -2,10 +2,10 @@ import React from 'react'
 
 import { FaInstagram, FaGithub, FaYoutube, FaTwitter } from "react-icons/fa";
 
-let instagram = <FaInstagram className='icons' size='2.5em' color='#181818' />
-let github = <FaGithub className='icons' size='2.5em' color='#D6D8DA' />
-let youtube = <FaYoutube className='icons' size='2.5em' color='#FF0000' />
-let twitter = <FaTwitter className='icons' size='2.5em' color='#55acee' />
+let instagram = <FaInstagram className='icons' alt='instagram icon' size='2.5em' color='#181818' />
+let github = <FaGithub className='icons' alt='github icon' size='2.5em' color='#D6D8DA' />
+let youtube = <FaYoutube className='icons' alt='youtube icon' size='2.5em' color='#FF0000' />
+let twitter = <FaTwitter className='icons' alt='twitter icon' size='2.5em' color='#55acee' />
 
 function Social() {
   return (

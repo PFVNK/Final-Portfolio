@@ -171,6 +171,7 @@
   font-family: 'Special Elite', cursive;
   /* color: #ff4d4d; */
   text-decoration: none;
+  font-size: 3.2vw;
 }
 
 .video-text-container h4 {
@@ -181,7 +182,7 @@
 .video-text-container p {
   font-family: 'Open Sans Condensed', sans-serif;
   color: #F8F8F8;
-  font-size: 1.5vw;
+  font-size: 2.5vw;
 }
 
 .projects-container {
@@ -266,6 +267,14 @@
     width: 60vw;
   }
 
+  .contact-text p {
+    font-size: 3vw;
+  }
+
+  .contact-text a {
+    font-size: 3vw;
+  }
+
   .dropdown {
     margin-top: 5%;
     font-size: 3vw;
@@ -344,12 +353,28 @@
     width: 75vw;
   }
 
+  .video-text-container a {
+    font-size: 5vw;
+  }
+
+  .video-text-container p {
+    font-size: 4.5vw;
+  }
+
   .video .video-iframe {
     height: 30vh;
     width: 70vw;
   }
 
   .dropdown {
+    font-size: 4.5vw;
+  }
+
+  .contact-text p {
+    font-size: 4.5vw;
+  }
+
+  .contact-text a {
     font-size: 4.5vw;
   }
 

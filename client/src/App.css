@@ -161,7 +161,7 @@
 }
 
 .video-text-container {
-  width: 70%;
+  width: 90%;
   text-align: center;
   margin-top: 2%;
   margin-bottom: 5%;
@@ -351,6 +351,10 @@
 
   .contact-container {
     width: 75vw;
+  }
+
+  .video-text-container {
+    width: 90%;
   }
 
   .video-text-container a {

@@ -19,24 +19,24 @@ function Dropdown() {
   const [projectsClicked, setProjectsClick] = useState(false)
   const [contactClicked, setContactClick] = useState(false)
 
-  const start = () => {
-    audio.play()
-  }
+  // const start = () => {
+  //   audio.play()
+  // }
 
   return (
     <>
       <div className='dropdown-container'>
         <div className='dropdown-box'>
-          <div className='dropdown' onClick={() => { setAboutClick(!aboutClicked); start() }}>About {aboutClicked ? ex : arrow}</div>
+          <div className='dropdown' onClick={() => { setAboutClick(!aboutClicked) }}>About {aboutClicked ? ex : arrow}</div>
           <div className='dropdown-shadow'></div>
           <div>{aboutClicked ? <About /> : null}</div>
-          <div className='dropdown' onClick={() => { setVideoClick(!videoClicked); start() }}>Videos {videoClicked ? ex : arrow}</div>
+          <div className='dropdown' onClick={() => { setVideoClick(!videoClicked) }}>Videos {videoClicked ? ex : arrow}</div>
           <div className='dropdown-shadow'></div>
           <div>{videoClicked ? <Videos /> : null}</div>
-          <div className='dropdown' onClick={() => { setProjectsClick(!projectsClicked); start() }}>Projects {projectsClicked ? ex : arrow}</div>
+          <div className='dropdown' onClick={() => { setProjectsClick(!projectsClicked) }}>Projects {projectsClicked ? ex : arrow}</div>
           <div className='dropdown-shadow'></div>
           <div>{projectsClicked ? <Projects /> : null}</div>
-          <div className='dropdown' onClick={() => { setContactClick(!contactClicked); start() }}>Contact {contactClicked ? ex : arrow}</div>
+          <div className='dropdown' onClick={() => { setContactClick(!contactClicked) }}>Contact {contactClicked ? ex : arrow}</div>
           <div className='dropdown-shadow'></div>
           <div>{contactClicked ? <Contact /> : null}</div>
         </div>

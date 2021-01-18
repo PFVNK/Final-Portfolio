@@ -129,7 +129,7 @@
 }
 
 .videos-container {
-  height: 50vh;
+  height: 55vh;
   width: 40vw;
   overflow: scroll;
   border: solid #AB3C3C;
@@ -202,15 +202,16 @@
 
 .projects-container h2 {
   margin-top: 5%;
+  color: black;
 }
 
 .projects-container a {
   text-decoration: none;
-  color: black;
   font-family: 'Special Elite', cursive;
 }
 
 .projects-container p {
+  color: white;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 

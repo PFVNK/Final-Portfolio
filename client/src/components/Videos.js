@@ -14,14 +14,6 @@ function Videos() {
     fetchMyAPI()
   }, [fetchMyAPI])
 
-  // useEffect(() => {
-  //   if (videos) {
-  //     return videos.filter(video => video.snippet.thumbnails.default !== undefined).map(video => {
-  //       console.log(video)
-  //     })
-  //   }
-  // })
-
   if (videos) {
     console.log(videos)
     return (

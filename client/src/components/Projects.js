@@ -13,8 +13,6 @@ function Projects() {
         <p>View offensive statistics from any MLB team in an interactive bubble chart. Statisics include batting average, total hits and home runs. Statistical data is scraped and processed with Node/Express and Cheerio. Built with React and D3, styled with Sass.</p></a>
       <a href="http://www.willyburger.net/" target='_blank' rel='noreferrer'><h2>Willy Burger</h2>
         <p>Website for local burger restaurant built with React and React-Router.</p></a>
-      <a href="https://first-choice-pressure-washing.herokuapp.com/" target='_blank' rel='noreferrer'><h2>First Choice Pressure Washing</h2>
-        <p>Company website for pressure washing company built with React and React-router. Styled with Sass</p></a>
     </div>
   )
 }

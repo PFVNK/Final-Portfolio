@@ -356,6 +356,12 @@
   }
 }
 
+@media(max-height: 720px) {
+  .dropdown {
+    margin-top: 10%;
+  }
+}
+
 @media (max-width: 400px) {
   .social-icons {
     width: 55vw;
@@ -423,5 +429,11 @@
 
   p {
     font-size: 5vw;
+  }
+}
+
+@media(max-height: 600px) {
+  .title-container {
+    height: 25vh;
   }
 }

@@ -10,7 +10,7 @@ function Projects() {
       <a href="https://www.get-stuff.net" target='_blank' rel='noreferrer'><h2>Get Stuff</h2>
         <p>Follow your favorite Craiglist searches and get notified when new items are added. Built with a React front-end and Node/Express backend</p></a>
       <a href="http://www.mlbd3.com/" target='_blank' rel='noreferrer'><h2>MLBD3</h2>
-        <p>View offensive statistics from any MLB team in an interactive bubble chart. Statisics include batting average, total hits and home runs. Statistical data is scraped and processed with Node/Express and Cheerio. Built with React and D3, styled with Sass.</p></a>
+        <p>View offensive statistics from any MLB team in an interactive bubble chart. Statisics include batting average, total hits and home runs. Statistical data is scraped and processed with Node/Express and Cheerio. Built with React and D3, styled with Sass. Desktop only.</p></a>
       <a href="http://www.willyburger.net/" target='_blank' rel='noreferrer'><h2>Willy Burger</h2>
         <p>Website for local burger restaurant built with React and React-Router.</p></a>
     </div>

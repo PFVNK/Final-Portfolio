@@ -355,11 +355,12 @@
     font-size: 5vw;
   }
 }
-/* @media(max-height: 720px) {
+
+@media(max-height: 720px) and (max-width: 500px) {
   .dropdown {
     margin-top: 10%;
   }
-} */
+}
 
 @media (max-width: 400px) {
   .social-icons {
@@ -367,13 +368,13 @@
   }
 
   .title-container {
-    height: 21vh;
+    height: 24vh;
     font-size: 5.5vw;
   }
 
   .dropdown-box {
     width: 75vw;
-    margin-top: 5%;
+    /* margin-top: 3%; */
   }
 
   .dropdown {
@@ -431,7 +432,7 @@
   }
 }
 
-@media(max-height: 600px) {
+@media(max-height: 600px) and (min-width: 600px) {
   .title-container {
     height: 25vh;
   }

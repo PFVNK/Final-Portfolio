@@ -360,6 +360,10 @@
   .dropdown {
     margin-top: 10%;
   }
+
+  .title-container {
+    height: 19vh;
+  }
 }
 
 @media (max-width: 400px) {
@@ -429,6 +433,26 @@
 
   p {
     font-size: 5vw;
+  }
+}
+
+@media(max-height: 650px) and (max-width: 420px) {
+  .dropdown {
+    margin-top: 10%;
+  }
+
+  .title-container {
+    height: 21vh;
+  }
+}
+
+@media(max-height: 580px) and (max-width: 400px) {
+  .dropdown {
+    margin-top: 10%;
+  }
+
+  .title-container {
+    height: 23vh;
   }
 }
 

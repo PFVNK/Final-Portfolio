@@ -12,6 +12,7 @@ const app = express()
 app.use(morgan('tiny'))
 app.use(cors())
 app.use(compression())
+app.use(require('prerender-node'));
 
 
 app.get('/videos', (req, res) => {

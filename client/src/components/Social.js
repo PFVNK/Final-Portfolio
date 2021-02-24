@@ -1,4 +1,5 @@
 import React from 'react'
+import { Fade } from "react-awesome-reveal";
 
 import { FaInstagram, FaGithub, FaYoutube, FaTwitter } from "react-icons/fa";
 
@@ -10,12 +11,14 @@ let twitter = <FaTwitter className='icons' alt='twitter icon' size='2.5em' color
 function Social() {
   return (
     <div className='social-container'>
-      <div className='social-icons'>
-        <a href="https://github.com/PFVNK"><div className='github-icon' alt='Github Icon'>{github}</div></a>
-        <a href="https://www.youtube.com/channel/UCrkemqz8EI5wuaN5C4apjpA?view_as=subscriber"><div className='youtube-icon' alt='Youtube Icon'>{youtube}</div></a>
-        <a href="https://www.instagram.com/pfvnk/"><div className='instagram-icon' alt='Instagram Icon'>{instagram}</div></a>
-        <a href="https://twitter.com/PFVNK"><div className='twitter-icon' alt='Twitter Icon'>{twitter}</div></a>
-      </div>
+      <Fade delay={150}>
+        <div className='social-icons'>
+          <a href="https://github.com/PFVNK"><div className='github-icon' alt='Github Icon'>{github}</div></a>
+          <a href="https://www.youtube.com/channel/UCrkemqz8EI5wuaN5C4apjpA?view_as=subscriber"><div className='youtube-icon' alt='Youtube Icon'>{youtube}</div></a>
+          <a href="https://www.instagram.com/pfvnk/"><div className='instagram-icon' alt='Instagram Icon'>{instagram}</div></a>
+          <a href="https://twitter.com/PFVNK"><div className='twitter-icon' alt='Twitter Icon'>{twitter}</div></a>
+        </div>
+      </Fade>
     </div>
   )
 }

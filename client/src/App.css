@@ -19,6 +19,7 @@
 
 .title-container h1 {
   font-family: 'Special Elite', cursive;
+
 }
 
 .title-container h3 {
@@ -56,6 +57,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .icon {

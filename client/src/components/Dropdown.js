@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { AiOutlineClose, AiOutlineDown } from "react-icons/ai";
+import { Bounce } from "react-awesome-reveal"
 
 import loadable from '@loadable/component'
 
@@ -26,20 +27,22 @@ function Dropdown() {
   return (
     <>
       <div className='dropdown-container'>
-        <div className='dropdown-box'>
-          <div className='dropdown' onClick={() => { setAboutClick(!aboutClicked) }}>About {aboutClicked ? ex : arrow}</div>
-          <div className='dropdown-shadow'></div>
-          <div>{aboutClicked ? <About /> : null}</div>
-          <div className='dropdown' onClick={() => { setVideoClick(!videoClicked) }}>Videos {videoClicked ? ex : arrow}</div>
-          <div className='dropdown-shadow'></div>
-          <div>{videoClicked ? <Videos /> : null}</div>
-          <div className='dropdown' onClick={() => { setProjectsClick(!projectsClicked) }}>Projects {projectsClicked ? ex : arrow}</div>
-          <div className='dropdown-shadow'></div>
-          <div>{projectsClicked ? <Projects /> : null}</div>
-          <div className='dropdown' onClick={() => { setContactClick(!contactClicked) }}>Contact {contactClicked ? ex : arrow}</div>
-          <div className='dropdown-shadow'></div>
-          <div>{contactClicked ? <Contact /> : null}</div>
-        </div>
+        <Bounce delay={150}>
+          <div className='dropdown-box'>
+            <div className='dropdown' onClick={() => { setAboutClick(!aboutClicked) }}>About {aboutClicked ? ex : arrow}</div>
+            <div className='dropdown-shadow'></div>
+            <div>{aboutClicked ? <About /> : null}</div>
+            <div className='dropdown' onClick={() => { setVideoClick(!videoClicked) }}>Videos {videoClicked ? ex : arrow}</div>
+            <div className='dropdown-shadow'></div>
+            <div>{videoClicked ? <Videos /> : null}</div>
+            <div className='dropdown' onClick={() => { setProjectsClick(!projectsClicked) }}>Projects {projectsClicked ? ex : arrow}</div>
+            <div className='dropdown-shadow'></div>
+            <div>{projectsClicked ? <Projects /> : null}</div>
+            <div className='dropdown' onClick={() => { setContactClick(!contactClicked) }}>Contact {contactClicked ? ex : arrow}</div>
+            <div className='dropdown-shadow'></div>
+            <div>{contactClicked ? <Contact /> : null}</div>
+          </div>
+        </Bounce>
       </div>
     </>
   )

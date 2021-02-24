@@ -27,7 +27,7 @@ function Dropdown() {
   return (
     <>
       <div className='dropdown-container'>
-        <Bounce delay={150}>
+        <Bounce delay={350}>
           <div className='dropdown-box'>
             <div className='dropdown' onClick={() => { setAboutClick(!aboutClicked) }}>About {aboutClicked ? ex : arrow}</div>
             <div className='dropdown-shadow'></div>

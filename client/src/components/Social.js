@@ -11,7 +11,7 @@ let twitter = <FaTwitter className='icons' alt='twitter icon' size='2.5em' color
 function Social() {
   return (
     <div className='social-container'>
-      <Fade delay={150}>
+      <Fade delay={275}>
         <div className='social-icons'>
           <a href="https://github.com/PFVNK"><div className='github-icon' alt='Github Icon'>{github}</div></a>
           <a href="https://www.youtube.com/channel/UCrkemqz8EI5wuaN5C4apjpA?view_as=subscriber"><div className='youtube-icon' alt='Youtube Icon'>{youtube}</div></a>
